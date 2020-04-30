@@ -18,7 +18,7 @@ void toDoError(context){
     }
         }, child: Text("Open github"))
       ],
-      backgroundColor: Color(0xFF062f4f)/*Color(0xFFb92601)*/,
+      backgroundColor: Color(0xFF062f4f),
     );
   });
 }

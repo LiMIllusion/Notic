@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'other/sizeConfig.dart';
 import 'other/errorSnackbar.dart';
+import 'notebooks/notebooks.dart';
 
 class HomeScreen extends StatefulWidget{
   @override
@@ -32,15 +33,17 @@ class _HomeScreenState extends State<HomeScreen>{
                   width: 60 * SizeConfig.safeBlockScreenWidth,
                   child: Padding(
                       padding: EdgeInsets.all(5.0),
-                      child: RaisedButton(
+                      child: Hero(
+                        tag: "notebooks",
+                        child:RaisedButton(
                       color: Color(0xFF062f4f),
                         elevation: 13,
-                        child: Text("Quaderno", style: TextStyle(color: Color(0xfff4f8ed), fontSize: 8*SizeConfig.safeBlockScreenHeight)),
+                        child: Text("APPUNTI", style: TextStyle(color: Color(0xfff4f8ed), fontSize: 8*SizeConfig.safeBlockScreenHeight)),
                         onPressed: (){
-                          toDoError(context);
-                          //Navigator.push(context, MaterialPageRoute(builder: (context) => Quaderno()))
+                          //toDoError(context);
+                          Navigator.push(context, MaterialPageRoute<void>(builder: (BuildContext context) => NoteBooks()));
                         },
-                      )),
+                      ))),
                 )
               ]),
               Row(
