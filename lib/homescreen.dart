@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'other/sizeConfig.dart';
-import 'other/errorSnackbar.dart';
+import 'other/errorPopup.dart';
 import 'notebooks/notebooks.dart';
 
 class HomeScreen extends StatefulWidget{
@@ -59,7 +59,9 @@ class _HomeScreenState extends State<HomeScreen>{
                               color: Color(0xFF813772),
                               elevation: 13,
                               child: Text("Accedi a una stanza", style: TextStyle(color: Color(0xfff4f8ed), fontSize: 3*SizeConfig.safeBlockScreenHeight)),
-                              onPressed: (){toDoError(context);},
+                              onPressed: (){
+                                toDoError(context);
+                                },
                             )),
                       ),
                       Container(

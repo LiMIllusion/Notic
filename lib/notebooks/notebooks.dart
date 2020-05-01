@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../other/sizeConfig.dart';
-import '../other/errorSnackbar.dart';
+import '../other/errorPopup.dart';
+
+
+
 
 class NoteBooks extends StatefulWidget {
   @override
@@ -8,11 +11,13 @@ class NoteBooks extends StatefulWidget {
 }
 
 class _NoteBooksState extends State<NoteBooks> {
+
   @override
   Widget build(BuildContext context) {
     return Hero(
       tag: "notebooks",
       child: Scaffold(
+        
         appBar: AppBar(
           backgroundColor: Color(0xFF062f4f),
           title: Text("APPUNTI",
@@ -35,6 +40,11 @@ class _NoteBooksState extends State<NoteBooks> {
               ),
             ),
           ),
+          actions: [
+            IconButton(icon: Icon(Icons.add), onPressed: (){
+              toDoError(context);
+            })
+          ],
         ),
       ),
     );

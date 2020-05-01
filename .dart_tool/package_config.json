@@ -74,6 +74,30 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "path_provider",
+      "rootUri": "file:///Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "path_provider_macos",
+      "rootUri": "file:///Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/platform-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "1.24"
+    },
+    {
       "name": "plugin_platform_interface",
       "rootUri": "file:///Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.2",
       "packageUri": "lib/",
@@ -170,7 +194,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-04-30T16:48:59.210135Z",
+  "generated": "2020-05-01T08:35:33.533824Z",
   "generator": "pub",
   "generatorVersion": "2.8.0-dev.20.0.flutter-c9710e5059"
 }

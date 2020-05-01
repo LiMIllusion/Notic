@@ -6,6 +6,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "FlutterPluginRegistry"
+- !private "PathProviderPlugin"
 - "RegisterGeneratedPlugins"
 - !private "StringLiteralType"
 - !private "UrlLauncherPlugin"
@@ -20,6 +21,7 @@ depends-member:
 - !private ["So8NSObjectC", "register"]
 - !private ["So8NSObjectP", "register"]
 - !private ["So8NSObjectP", "registrar"]
+- !private ["19path_provider_macos18PathProviderPluginC", "register"]
 - !private ["18url_launcher_macos17UrlLauncherPluginC", "register"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "register"]
@@ -33,6 +35,7 @@ depends-nominal:
 - !private "SH"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
+- !private "19path_provider_macos18PathProviderPluginC"
 - !private "18url_launcher_macos17UrlLauncherPluginC"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -52,6 +55,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreAudio.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/limillusion/Dev/Notic/Notic/build/macos/Build/Products/Debug/path_provider_macos/path_provider_macos.framework/Modules/path_provider_macos.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Users/limillusion/Dev/Notic/Notic/build/macos/Build/Products/Debug/url_launcher_macos/url_launcher_macos.framework/Modules/url_launcher_macos.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
@@ -60,6 +64,7 @@ depends-external:
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Headers/FlutterPluginMacOS.h"
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Headers/FlutterPluginRegistrarMacOS.h"
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Headers/FlutterMacOS.h"
+- "/Users/limillusion/Dev/Notic/Notic/build/macos/Build/Products/Debug/path_provider_macos/path_provider_macos.framework/Headers/path_provider_macos-umbrella.h"
 - "/Users/limillusion/Dev/Notic/Notic/build/macos/Build/Products/Debug/url_launcher_macos/url_launcher_macos.framework/Headers/url_launcher_macos-umbrella.h"
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Headers/FlutterEngine.h"
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Headers/FlutterTexture.h"
@@ -70,8 +75,10 @@ depends-external:
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Headers/FlutterChannels.h"
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Headers/FlutterMacros.h"
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Headers/FlutterDartProject.h"
+- "/Users/limillusion/Dev/Notic/Notic/build/macos/Build/Products/Debug/path_provider_macos/path_provider_macos.framework/Headers/path_provider_macos-Swift.h"
 - "/Users/limillusion/Dev/Notic/Notic/build/macos/Build/Products/Debug/url_launcher_macos/url_launcher_macos.framework/Headers/url_launcher_macos-Swift.h"
 - "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/ephemeral/.symlinks/flutter/darwin-x64/FlutterMacOS.framework/Modules/module.modulemap"
+- "/Users/limillusion/Dev/Notic/Notic/build/macos/Build/Products/Debug/path_provider_macos/path_provider_macos.framework/Modules/module.modulemap"
 - "/Users/limillusion/Dev/Notic/Notic/build/macos/Build/Products/Debug/url_launcher_macos/url_launcher_macos.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
@@ -89,4 +96,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ace64caf887739c08db31fa3fc20eb70"
+interface-hash: "fb8ef9d7a574d66230167fee3888350b"
