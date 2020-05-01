@@ -1,12 +1,17 @@
+import 'dart:async';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
 class AccessStorage{
   String filename = "";
 
-  Future<String> readFile(String filename){
-    this.filename = filename;
-    return readContent();
+  String readFile(String filename){
+    this.filename = filename; 
+    String returnValue;
+    readContent().then((value){
+      returnValue = value;
+    }); 
+    return returnValue;
   }
 
   Future<File> writeFile(String filename, String contents){
