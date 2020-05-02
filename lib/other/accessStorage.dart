@@ -35,7 +35,7 @@ class AccessStorage{
       String contents = await file.readAsString();
       return contents;
     }catch(e){
-      return "";
+      return "errore";
     }
   }
 

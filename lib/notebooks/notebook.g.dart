@@ -7,9 +7,10 @@ part of 'notebook.dart';
 // **************************************************************************
 
 Notebook _$NotebookFromJson(Map<String, dynamic> json) {
+  $checkKeys(json, requiredKeys: const ['filename', 'cover']);
   return Notebook(
     json['filename'] as String,
-    json['cover'] as String,
+    json['cover'] as int,
   );
 }
 

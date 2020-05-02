@@ -146,6 +146,12 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_colorpicker",
+      "rootUri": "file:///Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_colorpicker-0.3.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/limillusion/Flutter/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -452,7 +458,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-05-02T08:03:03.116357Z",
+  "generated": "2020-05-02T09:18:10.710841Z",
   "generator": "pub",
   "generatorVersion": "2.8.0-dev.20.0.flutter-c9710e5059"
 }

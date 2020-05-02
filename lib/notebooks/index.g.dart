@@ -7,8 +7,8 @@ part of 'index.dart';
 // **************************************************************************
 
 Index _$IndexFromJson(Map<String, dynamic> json) {
+  $checkKeys(json, requiredKeys: const ['notebook']);
   return Index(
-    json['n'] as String,
     json['notebook'] == null
         ? null
         : Notebook.fromJson(json['notebook'] as Map<String, dynamic>),
@@ -16,6 +16,5 @@ Index _$IndexFromJson(Map<String, dynamic> json) {
 }
 
 Map<String, dynamic> _$IndexToJson(Index instance) => <String, dynamic>{
-      'n': instance.n,
-      'notebook': instance.notebook,
+      'notebook': instance.notebook?.toJson(),
     };

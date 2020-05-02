@@ -7,12 +7,12 @@ class HomeScreen extends StatefulWidget{
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
+
 /*
   Color scheme:
     Color(0xFF062f4f)
     Color(0xFF813772)
     Color(0xFFb92601)
-
 */
 
 class _HomeScreenState extends State<HomeScreen>{

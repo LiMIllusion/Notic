@@ -2,11 +2,11 @@ import 'package:json_annotation/json_annotation.dart';
 import 'notebook.dart';
 part 'index.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true)
 class Index {
-    String n;
+  @JsonKey(required: true)
     Notebook notebook;
-    Index(this.n, this.notebook);
+    Index(this.notebook);
     factory Index.fromJson(Map<String, dynamic> json) => _$IndexFromJson(json);
     Map<String, dynamic> toJson() => _$IndexToJson(this);
 }
