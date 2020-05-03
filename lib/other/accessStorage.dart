@@ -1,17 +1,14 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
+import 'package:flutter/material.dart';
 
 class AccessStorage{
   String filename = "";
 
-  String readFile(String filename){
+  Future<String> readFile(String filename){
     this.filename = filename; 
-    String returnValue;
-    readContent().then((value){
-      returnValue = value;
-    }); 
-    return returnValue;
+    readContent();
   }
 
   Future<File> writeFile(String filename, String contents){
@@ -32,10 +29,9 @@ class AccessStorage{
   Future<String> readContent() async{
     try{
       final file = await _localFile;
-      String contents = await file.readAsString();
-      return contents;
+      return file.readAsString();
     }catch(e){
-      return "errore";
+      return "";
     }
   }
 

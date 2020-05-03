@@ -12,10 +12,9 @@ class NoteBooks extends StatefulWidget {
 }
 
 class _NoteBooksState extends State<NoteBooks> {
+  String finalIndex = "";
   @override
   Widget build(BuildContext context) {
-    String index = AccessStorage().readFile("indexFile.json");
-    print("file content: $index");
     return Hero(
       tag: "notebooks",
       child: Scaffold(
@@ -45,16 +44,31 @@ class _NoteBooksState extends State<NoteBooks> {
             IconButton(
                 icon: Icon(Icons.add),
                 onPressed: () {
-                  addNotebook(context, index);
+                  addNotebook(context, finalIndex);
                 })
           ],
         ),
-        body: index == null ? notebooksNotFound() : listOfNotebooks(index),
+        body: mainBody()
       ),
     );
   }
 
-  Widget addNotebook(context,String index) {
+  Widget mainBody(){
+    return FutureBuilder(
+      future: AccessStorage().readFile("indexFile.json"),
+      builder: (context, index){
+        if(index.hasData){
+          this.finalIndex = index.data;
+          print("Main body dice: ${index.data}");
+          listOfNotebooks(index.data);
+        }
+        print("File empty");
+        return notebooksNotFound();
+      },
+    );
+  }
+
+  void addNotebook(context,String index) {
     final filename = TextEditingController();
     Color _currentColor = Colors.green;
     SizeConfig().init(context);
@@ -119,7 +133,6 @@ class _NoteBooksState extends State<NoteBooks> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          //Expanded(child: Container(height: 0, width: 0,)),
           Icon(
             Icons.block,
             size: SizeConfig.safeBlockScreenWidth * 8,
@@ -129,14 +142,16 @@ class _NoteBooksState extends State<NoteBooks> {
             "Sembra non ci siano quaderni.\nAggiungine qualcuno per vederli qui!",
             textAlign: TextAlign.center,
           ),
-          //Expanded(child: Container(height: 0, width: 0,))
         ],
       ),
     );
   }
 
   Widget listOfNotebooks(String index) {
-    print(index);
+    setState(() {
+            this.finalIndex = index;
+          });
+    print("aaa:$index");
     return null;
   }
 }
