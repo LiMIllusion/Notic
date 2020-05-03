@@ -5,6 +5,7 @@ import '../other/accessStorage.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'notebook.dart';
 import 'index.dart';
+import 'dart:convert';
 
 class NoteBooks extends StatefulWidget {
   @override
@@ -60,7 +61,7 @@ class _NoteBooksState extends State<NoteBooks> {
         if(index.hasData){
           this.finalIndex = index.data;
           print("Main body dice: ${index.data}");
-          listOfNotebooks(index.data);
+          return listOfNotebooks(index.data);
         }
         print("File empty");
         return notebooksNotFound();
@@ -85,7 +86,7 @@ class _NoteBooksState extends State<NoteBooks> {
                   print(_currentColor);
                   Index newIndex = Index(Notebook(filename.text, _currentColor.value));
                   print("${newIndex.toJson()}");
-                  index = "${index == null ? '' : '$index,'} ${newIndex.toJson()}";
+                  index = "${index == '' ? '' : '$index;'}${newIndex.toJson()}";
                   AccessStorage().writeFile("indexFile.json", index);
                   AccessStorage().writeFile("${filename.text}.notic", "aaa");
                   print(index);
@@ -148,10 +149,18 @@ class _NoteBooksState extends State<NoteBooks> {
   }
 
   Widget listOfNotebooks(String index) {
-    setState(() {
-            this.finalIndex = index;
-          });
-    print("aaa:$index");
-    return null;
+    this.finalIndex = index; 
+    var notebooksList = <Index>[];
+    index.split(";").forEach((element) {
+      notebooksList.add(Index.fromJson(json.decode(element)));
+    });
+    return ListView.builder(
+      itemCount: notebooksList.length,
+      itemBuilder: (BuildContext context, int i){
+        return ListTile(
+          trailing: Icon(Icons.book, color: Color(notebooksList[i].notebook.cover),),
+          title: Text(notebooksList[i].notebook.filename),
+        );
+      });
   }
 }

@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		hwCftu/ura9JmRcXUIb1N6OUa4s=
+		9nY1Tuf1Lj6Aw4AaGcDqMfUjU/k=
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<data>
-		e9ZIRG6gtcJwbDTI89soxv+6DII=
+		Li4LbKn/soytbN+oG0PxYLqJZj0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -23,10 +23,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			bQCEe7adIM4RcSXqLCm9D/4iv4w=
+			rYG1jtMfeacz0cpwFlWXMyt7xBY=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"7b034c4f269d1266477887709e2a4f8d764bc02e" or cdhash H"6d00847bb69d20ce117125ea2c29bd0ffe22bf8c"</string>
+			<string>cdhash H"8c6271c7acebb6805ef522225ec5d5b8573c7b96" or cdhash H"ad81b58ed31f79a733d1ca70165597332b7bc416"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
@@ -113,19 +113,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			iV70gMb0T7ZZB9WL01MpMqA7t4g=
+			TK7BW1T/F9vpcWBY11LI9nXIWlA=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"079741287a8c90a77fc4b073d760b2b0bcf5f710" or cdhash H"895ef480c6f44fb65907d58bd3532932a03bb788"</string>
+			<string>cdhash H"576b8c2f448e8bd29008a012abac603a1379fb35" or cdhash H"4caec15b54ff17dbe9716058d752c8f675c85a50"</string>
 		</dict>
 		<key>Frameworks/url_launcher_macos.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			+WiShCMK7LoSpH5h8LSvEb6Geoc=
+			Wqt+GozY8Q+G6d2biWvzX6f5+9o=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"1300b6371ccc32fa8a6ad2559c2b01bf4f670d0d" or cdhash H"f9689284230aecba12a47e61f0b4af11be867a87"</string>
+			<string>cdhash H"e8c36e11f26d67b363bf2d136acc09ce06c208ba" or cdhash H"5aab7e1a8cd8f10f86e9dd9b896bf35fa7f9fbda"</string>
 		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
@@ -142,22 +142,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hwCftu/ura9JmRcXUIb1N6OUa4s=
+			9nY1Tuf1Lj6Aw4AaGcDqMfUjU/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			GG84pq4o9ZJ7VJGwcxArnGdTYTRTErke+Lf9olIzlkk=
+			ZBbCa38UK8BG0N75ppQRrwsESpHyu39EPLS1Ea695SU=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e9ZIRG6gtcJwbDTI89soxv+6DII=
+			Li4LbKn/soytbN+oG0PxYLqJZj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ag1qr/v128WcnVmXOjEntPWVWu9Mj5crjFXqlSBkQcs=
+			vIt9Kdkc5NByvmAblJB789XrcIiE7LjJIKbYCPV+p9I=
 			</data>
 		</dict>
 	</dict>

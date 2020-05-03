@@ -16,5 +16,5 @@ Index _$IndexFromJson(Map<String, dynamic> json) {
 }
 
 Map<String, dynamic> _$IndexToJson(Index instance) => <String, dynamic>{
-      'notebook': instance.notebook?.toJson(),
+      '"notebook"': "${instance.notebook?.toJson()}",
     };

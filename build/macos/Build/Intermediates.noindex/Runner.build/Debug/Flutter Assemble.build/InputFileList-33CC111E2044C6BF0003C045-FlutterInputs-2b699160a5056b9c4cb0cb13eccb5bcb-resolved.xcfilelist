@@ -2,6 +2,10 @@
 /Users/limillusion/Dev/Notic/Notic/LICENSE
 /Users/limillusion/Dev/Notic/Notic/lib/homescreen.dart
 /Users/limillusion/Dev/Notic/Notic/lib/main.dart
+/Users/limillusion/Dev/Notic/Notic/lib/notebooks/index.dart
+/Users/limillusion/Dev/Notic/Notic/lib/notebooks/index.g.dart
+/Users/limillusion/Dev/Notic/Notic/lib/notebooks/notebook.dart
+/Users/limillusion/Dev/Notic/Notic/lib/notebooks/notebook.g.dart
 /Users/limillusion/Dev/Notic/Notic/lib/notebooks/notebooks.dart
 /Users/limillusion/Dev/Notic/Notic/lib/other/accessStorage.dart
 /Users/limillusion/Dev/Notic/Notic/lib/other/errorPopup.dart
@@ -66,6 +70,15 @@
 /Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/io-0.3.4/LICENSE
 /Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.1+1/LICENSE
 /Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/LICENSE
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/json_annotation.dart
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/src/allowed_keys_helpers.dart
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/src/checked_helpers.dart
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/src/json_converter.dart
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/src/json_key.dart
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/src/json_literal.dart
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/src/json_serializable.dart
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/src/json_serializable.g.dart
+/Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-3.0.1/lib/src/json_value.dart
 /Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/json_serializable-3.3.0/LICENSE
 /Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/logging-0.11.4/LICENSE
 /Users/limillusion/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.6/LICENSE

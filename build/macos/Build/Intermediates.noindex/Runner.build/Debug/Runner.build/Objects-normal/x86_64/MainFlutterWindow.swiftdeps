@@ -2,9 +2,9 @@
 provides-top-level:
 - "MainFlutterWindow"
 provides-nominal:
-- "5notic17MainFlutterWindowC"
+- "5Notic17MainFlutterWindowC"
 provides-member:
-- ["5notic17MainFlutterWindowC", ""]
+- ["5Notic17MainFlutterWindowC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
 depends-top-level:
@@ -57,14 +57,14 @@ depends-member:
 - !private ["SH", "frame"]
 - !private ["SH", "init"]
 - !private ["SH", "setFrame"]
-- !private ["5notic17MainFlutterWindowC", "FlutterViewController"]
-- !private ["5notic17MainFlutterWindowC", "RegisterGeneratedPlugins"]
-- ["5notic17MainFlutterWindowC", "awakeFromNib"]
-- !private ["5notic17MainFlutterWindowC", "contentViewController"]
-- ["5notic17MainFlutterWindowC", "deinit"]
-- !private ["5notic17MainFlutterWindowC", "frame"]
-- ["5notic17MainFlutterWindowC", "init"]
-- !private ["5notic17MainFlutterWindowC", "setFrame"]
+- !private ["5Notic17MainFlutterWindowC", "FlutterViewController"]
+- !private ["5Notic17MainFlutterWindowC", "RegisterGeneratedPlugins"]
+- ["5Notic17MainFlutterWindowC", "awakeFromNib"]
+- !private ["5Notic17MainFlutterWindowC", "contentViewController"]
+- ["5Notic17MainFlutterWindowC", "deinit"]
+- !private ["5Notic17MainFlutterWindowC", "frame"]
+- ["5Notic17MainFlutterWindowC", "init"]
+- !private ["5Notic17MainFlutterWindowC", "setFrame"]
 - !private ["So22NSAccessibilityElementP", "FlutterViewController"]
 - !private ["So22NSAccessibilityElementP", "RegisterGeneratedPlugins"]
 - ["So22NSAccessibilityElementP", ""]
@@ -205,7 +205,7 @@ depends-nominal:
 - !private "So21FlutterPluginRegistryP"
 - !private "So21FlutterViewControllerC"
 - "SH"
-- "5notic17MainFlutterWindowC"
+- "5Notic17MainFlutterWindowC"
 - "So22NSAccessibilityElementP"
 - "So15NSAccessibilityP"
 - "So29NSAnimatablePropertyContainerP"

@@ -15,6 +15,6 @@ Notebook _$NotebookFromJson(Map<String, dynamic> json) {
 }
 
 Map<String, dynamic> _$NotebookToJson(Notebook instance) => <String, dynamic>{
-      'filename': instance.filename,
-      'cover': instance.cover,
+      '"filename"': "${instance.filename}",
+      '"cover"': "${instance.cover}",
     };

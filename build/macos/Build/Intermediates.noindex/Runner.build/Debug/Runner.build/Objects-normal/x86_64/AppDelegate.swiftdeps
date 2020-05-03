@@ -2,9 +2,9 @@
 provides-top-level:
 - "AppDelegate"
 provides-nominal:
-- "5notic11AppDelegateC"
+- "5Notic11AppDelegateC"
 provides-member:
-- ["5notic11AppDelegateC", ""]
+- ["5Notic11AppDelegateC", ""]
 provides-dynamic-lookup:
 - "applicationShouldTerminateAfterLastWindowClosed"
 depends-top-level:
@@ -14,11 +14,11 @@ depends-top-level:
 - "FlutterAppDelegate"
 - "NSApplication"
 depends-member:
-- ["5notic11AppDelegateC", "Bool"]
-- ["5notic11AppDelegateC", "NSApplication"]
-- ["5notic11AppDelegateC", "applicationShouldTerminateAfterLastWindowClosed"]
-- ["5notic11AppDelegateC", "deinit"]
-- ["5notic11AppDelegateC", "init"]
+- ["5Notic11AppDelegateC", "Bool"]
+- ["5Notic11AppDelegateC", "NSApplication"]
+- ["5Notic11AppDelegateC", "applicationShouldTerminateAfterLastWindowClosed"]
+- ["5Notic11AppDelegateC", "deinit"]
+- ["5Notic11AppDelegateC", "init"]
 - ["s7CVarArgP", ""]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", ""]
@@ -38,7 +38,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 depends-nominal:
-- "5notic11AppDelegateC"
+- "5Notic11AppDelegateC"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
