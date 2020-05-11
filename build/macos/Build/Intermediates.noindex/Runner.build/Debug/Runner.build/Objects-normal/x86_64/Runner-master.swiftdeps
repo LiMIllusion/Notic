@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
 options: "4c9bb144dc7d736bf6e8ad3988e2f948"
-build_time: [1588502162, 419753000]
+build_time: [1589125644, 546231000]
 inputs:
   "/Users/limillusion/Dev/Notic/Notic/macos/Runner/MainFlutterWindow.swift": [1586197996, 882498048]
   "/Users/limillusion/Dev/Notic/Notic/macos/Runner/AppDelegate.swift": [1586197996, 876592800]
-  "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/GeneratedPluginRegistrant.swift": [1588502084, 27482481]
+  "/Users/limillusion/Dev/Notic/Notic/macos/Flutter/GeneratedPluginRegistrant.swift": [1589125599, 295814765]
